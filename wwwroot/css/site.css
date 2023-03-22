@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.libro-link{
+    text-decoration: none;
+}
+.texto-autor {
+    font-family: 'Farsan', cursive;
+    font-size: 1.5rem;
+}

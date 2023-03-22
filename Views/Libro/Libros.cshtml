@@ -1,0 +1,24 @@
+﻿@model ListaLibrosViewModel;
+
+<section class="container seccion-libros">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        @foreach (var libro in Model.Libros)
+        {
+            @*if (libro.Autor.NombreAutor == "Robert C. Martin")
+            {*@
+
+            <div class="card" style="width: 18rem;">
+                <img src="@libro.FotoLibro" class="card-img-top" alt="@libro.Nombre">
+                <div class="card-body">
+                    <h5 class="card-title">@libro.Nombre</h5>
+                    <p class="card-text">@libro.Descripcion</p>
+                    <h5 class="card-title">Autor: <span class="texto-autor">@libro.Autor.NombreAutor</span></h5>
+                    <a href="@libro.Url" class="btn btn-primary" target="_blank">Saber más</a>
+                </div>
+            </div>
+
+            @*}*@
+        }
+    </div>
+</section>
